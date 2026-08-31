@@ -1,0 +1,16 @@
+# FluxKontextPipeline first shipped in diffusers 0.35.0
+diffusers>=0.35.0
+torch>=2.4.0
+transformers>=4.40.0
+accelerate>=0.30.0
+peft>=0.17.0
+safetensors
+huggingface_hub
+sentencepiece
+protobuf
+Pillow>=10.0.0
+numpy>=1.24.0
+
+# Optional: enables the flash SDPA path on long sequences.
+# Build takes a while; the pipeline runs without it.
+# flash-attn>=2.6.0
