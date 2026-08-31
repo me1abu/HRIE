@@ -141,15 +141,6 @@ Per-optimization attribution is **not** measured here. The `--no_compile`, `--no
 
 ⚠️ Do not disable the math or mem-efficient SDPA backends to force flash. The VAE runs attention at spatial sizes where flash has no valid kernel, and PyTorch raises `No available kernel` rather than falling back. Enable flash on top and leave the others available; SDPA selects per call.
 
-## Files
-
-| File | Purpose |
-|---|---|
-| `attention_processor.py` | Attention processors with dynamic `train_seq_len` |
-| `transformer_flux_kontext.py` | Transformer with Kontext-compatible `forward()` |
-| `pipeline_flux_kontext_urae.py` | NTK derivation, resolution passthrough, stackable LoRA loading |
-| `batch_urae_kontext.py` | Optimized batch runner |
-
 ## Acknowledgement
 
 - [URAE](https://github.com/Huage001/URAE) (Apache-2.0) for the ultra-resolution adaptation method and the 2K adapter weights.
