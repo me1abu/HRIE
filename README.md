@@ -21,7 +21,7 @@
 - Clone this repo into your project directory:
 
 ```bash
-git clone https://github.com/<you>/HRIE.git
+git clone https://github.com/me1abu/HRIE.git
 cd HRIE
 ```
 
@@ -64,7 +64,7 @@ cd HRIE
 ## Installation
 
 ```bash
-git clone https://github.com/<you>/HRIE.git
+git clone https://github.com/me1abu/HRIE.git
 cd HRIE
 conda create -n hrie python=3.12
 conda activate hrie
@@ -157,5 +157,3 @@ Per-optimization attribution is **not** measured here. The `--no_compile`, `--no
 - [diffusers](https://github.com/huggingface/diffusers) for the pipeline and attention code base.
 
 Model weights are not redistributed here. FLUX.1-Kontext-dev ships under Black Forest Labs' non-commercial license — check it before any commercial use, as the license on this repo grants you no rights to the model.
-#   H R I E  
- 
